@@ -141,4 +141,4 @@ Found 2 issues:
 
 ## 📜 License
 
-MIT © Your Name or Org
+This project is licensed under the MIT License
