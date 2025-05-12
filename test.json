@@ -1,0 +1,326 @@
+"Images": [
+    {
+      "PlatformDetails": "Red Hat Enterprise Linux",
+      "UsageOperation": "RunInstances:0010",
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/sda1",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "SnapshotId": "snap-00e259da4b694837a",
+            "VolumeSize": 10,
+            "VolumeType": "gp3",
+            "Encrypted": false
+          }
+        }
+      ],
+      "Description": "Provided by Red Hat, Inc.",
+      "EnaSupport": true,
+      "Hypervisor": "xen",
+      "ImageOwnerAlias": "amazon",
+      "Name": "RHEL-9.5.0_HVM-20250313-x86_64-0-Hourly2-GP3",
+      "RootDeviceName": "/dev/sda1",
+      "RootDeviceType": "ebs",
+      "SriovNetSupport": "simple",
+      "VirtualizationType": "hvm",
+      "BootMode": "uefi-preferred",
+      "DeprecationTime": "2027-03-13T16:57:40.000Z",
+      "ImageId": "ami-0f6c1051253397fef",
+      "ImageLocation": "amazon/RHEL-9.5.0_HVM-20250313-x86_64-0-Hourly2-GP3",
+      "State": "available",
+      "OwnerId": "309956199498",
+      "CreationDate": "2025-03-13T16:57:40.000Z",
+      "Public": true,
+      "Architecture": "x86_64",
+      "ImageType": "machine"
+    }
+  ],
+  "ResponseMetadata": {
+    "RequestId": "c0828c04-d8b5-4f2f-9061-a167a85139d3",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "c0828c04-d8b5-4f2f-9061-a167a85139d3",
+      "cache-control": "no-cache, no-store",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "content-type": "text/xml;charset=UTF-8",
+      "content-length": "1421",
+      "date": "Sat, 03 May 2025 18:31:25 GMT",
+      "server": "AmazonEC2"
+    },
+    "RetryAttempts": 0
+  }
+
+
+
+{
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "AttachTime": "2025-05-02T02:39:28Z",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-01c7855bbf8eaeaaf"
+        }
+      }
+    ],
+    "ClientToken": "4dc6465c-6452-4915-9a3c-059545cd9f57",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "amazon",
+          "PublicDnsName": "ec2-3-145-191-150.us-east-2.compute.amazonaws.com",
+          "PublicIp": "3.145.191.150"
+        },
+        "Attachment": {
+          "AttachTime": "2025-05-02T02:39:27Z",
+          "AttachmentId": "eni-attach-09ffe651a49f5c56c",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "NetworkCardIndex": 0
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupId": "sg-020d59b6d0ac24eae",
+            "GroupName": "launch-wizard-1"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "02:eb:bd:c8:fc:11",
+        "NetworkInterfaceId": "eni-03fc887ef98d9286e",
+        "OwnerId": "243526210913",
+        "PrivateDnsName": "ip-172-31-5-46.us-east-2.compute.internal",
+        "PrivateIpAddress": "172.31.5.46",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "amazon",
+              "PublicDnsName": "ec2-3-145-191-150.us-east-2.compute.amazonaws.com",
+              "PublicIp": "3.145.191.150"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-172-31-5-46.us-east-2.compute.internal",
+            "PrivateIpAddress": "172.31.5.46"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-00ada4f18f8d0c26b",
+        "VpcId": "vpc-0662da99d76a57017",
+        "InterfaceType": "interface",
+        "Operator": {
+          "Managed": false
+        }
+      }
+    ],
+    "RootDeviceName": "/dev/xvda",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-020d59b6d0ac24eae",
+        "GroupName": "launch-wizard-1"
+      }
+    ],
+    "SourceDestCheck": true,
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "Argus test server"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "required",
+      "HttpPutResponseHopLimit": 2,
+      "HttpEndpoint": "enabled",
+      "HttpProtocolIpv6": "disabled",
+      "InstanceMetadataTags": "disabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    },
+    "BootMode": "uefi-preferred",
+    "PlatformDetails": "Linux/UNIX",
+    "UsageOperation": "RunInstances",
+    "UsageOperationUpdateTime": "2025-05-02T02:39:27Z",
+    "PrivateDnsNameOptions": {
+      "HostnameType": "ip-name",
+      "EnableResourceNameDnsARecord": true,
+      "EnableResourceNameDnsAAAARecord": false
+    },
+    "MaintenanceOptions": {
+      "AutoRecovery": "default"
+    },
+    "CurrentInstanceBootMode": "legacy-bios",
+    "NetworkPerformanceOptions": {
+      "BandwidthWeighting": "default"
+    },
+    "Operator": {
+      "Managed": false
+    },
+    "InstanceId": "i-0386a4578b0e36f62",
+    "ImageId": "ami-058a8a5ab36292159",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "PrivateDnsName": "ip-172-31-5-46.us-east-2.compute.internal",
+    "PublicDnsName": "ec2-3-145-191-150.us-east-2.compute.amazonaws.com",
+    "StateTransitionReason": "",
+    "AmiLaunchIndex": 0,
+    "ProductCodes": [],
+    "InstanceType": "t2.micro",
+    "LaunchTime": "2025-05-02T02:39:27Z",
+    "Placement": {
+      "GroupName": "",
+      "Tenancy": "default",
+      "AvailabilityZone": "us-east-2a"
+    },
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "SubnetId": "subnet-00ada4f18f8d0c26b",
+    "VpcId": "vpc-0662da99d76a57017",
+    "PrivateIpAddress": "172.31.5.46",
+    "PublicIpAddress": "3.145.191.150"
+  }
+
+
+
+  {
+    "GroupId": "sg-020d59b6d0ac24eae",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "UserIdGroupPairs": [],
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": []
+      }
+    ],
+    "VpcId": "vpc-0662da99d76a57017",
+    "SecurityGroupArn": "arn:aws:ec2:us-east-2:243526210913:security-group/sg-020d59b6d0ac24eae",
+    "OwnerId": "243526210913",
+    "GroupName": "launch-wizard-1",
+    "Description": "launch-wizard-1 created 2025-05-02T02:37:28.354Z",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "UserIdGroupPairs": [],
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": []
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "UserIdGroupPairs": [],
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": []
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 443,
+        "ToPort": 443,
+        "UserIdGroupPairs": [],
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": []
+      }
+    ]
+  }
+
+
+{
+    'IpProtocol': 'tcp', 
+    'FromPort': 22, 
+    'ToPort': 22, 
+    'UserIdGroupPairs': [], 
+    'IpRanges': 
+        [
+            {'CidrIp': '0.0.0.0/0'}], 
+            'Ipv6Ranges': [], 
+            'PrefixListIds': []}
+
+
+            {
+              "Volumes": [
+                {
+                  "Iops": 3000,
+                  "VolumeType": "gp3",
+                  "MultiAttachEnabled": false,
+                  "Throughput": 125,
+                  "Operator": {
+                    "Managed": false
+                  },
+                  "VolumeId": "vol-09e555a2f250b1313",
+                  "Size": 10,
+                  "SnapshotId": "snap-00e259da4b694837a",
+                  "AvailabilityZone": "us-east-2b",
+                  "State": "in-use",
+                  "CreateTime": "2025-05-02T15:17:14.689000Z",
+                  "Attachments": [
+                    {
+                      "DeleteOnTermination": true,
+                      "VolumeId": "vol-09e555a2f250b1313",
+                      "InstanceId": "i-0b99b6e8e841a55de",
+                      "Device": "/dev/sda1",
+                      "State": "attached",
+                      "AttachTime": "2025-05-02T15:17:14Z"
+                    }
+                  ],
+                  "Encrypted": false
+                }
+              ],
+              "ResponseMetadata": {
+                "RequestId": "258885c4-daae-4c47-b19c-176a9532d371",
+                "HTTPStatusCode": 200,
+                "HTTPHeaders": {
+                  "x-amzn-requestid": "258885c4-daae-4c47-b19c-176a9532d371",
+                  "cache-control": "no-cache, no-store",
+                  "strict-transport-security": "max-age=31536000; includeSubDomains",
+                  "content-type": "text/xml;charset=UTF-8",
+                  "content-length": "926",
+                  "date": "Thu, 08 May 2025 01:04:56 GMT",
+                  "server": "AmazonEC2"
+                },
+                "RetryAttempts": 0
+              }
+            }
